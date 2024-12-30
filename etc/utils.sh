@@ -172,7 +172,7 @@ apply_patches() {
     java -jar revanced-cli*.jar patch \
         --patches patches*.rvp \
         "${excludePatches[@]}" "${includePatches[@]}" \
-        --out "$name-revanced-extended-v$version.apk" \
+        --out "$name-nopremium-v$version.apk" \
         "$name-v$version.apk"
     rm "$name-v$version.apk"
     unset excludePatches includePatches version
@@ -207,7 +207,7 @@ create_github_release() {
     authorization="Authorization: token $GITHUB_TOKEN" 
     apiReleases="https://api.github.com/repos/$GITHUB_REPOSITORY/releases"
     uploadRelease="https://uploads.github.com/repos/$GITHUB_REPOSITORY/releases"
-    apkFilePath=$(find . -type f -name "$name-revanced*.apk")
+    apkFilePath=$(find . -type f -name "$name-nopremium*.apk")
     apkFileName=$(basename "$apkFilePath")
     patchver=$(ls -1 patches*.rvp | grep -oP '\d+(\.\d+)+')
     cliver=$(ls -1 revanced-cli*.jar | grep -oP '\d+(\.\d+)+')
