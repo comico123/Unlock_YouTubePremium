@@ -1,1 +1,1 @@
-"Change header","Custom branding"
+Change header,Custom branding,Change package name
