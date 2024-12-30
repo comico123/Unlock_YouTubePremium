@@ -1,0 +1,36 @@
+name: Vá Revaned Extended
+on:
+  push:
+  schedule:
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+    
+jobs:
+  build:
+    name: Patch YouTube Premium
+    permissions: write-all
+    runs-on: ubuntu-latest
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@main  
+
+    - name: Cài Java 18
+      uses: actions/setup-java@v4
+      with:
+        distribution: 'temurin' # Temurin là nhà phân phối JDK phổ biến
+        java-version: '18'      # Thay bằng phiên bản bạn cần, ví dụ: 11, 8
+    
+    - name: Vá YouTube Vip
+      run: bash revanced.sh
+             
+    - name: Delete workflow runs
+      uses: Mattraks/delete-workflow-runs@v2
+      with:
+        token: ${{ github.token }}
+        repository: ${{ github.repository }}
+        retain_days: 0
+        keep_minimum_runs: 1
+        
