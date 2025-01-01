@@ -5,4 +5,4 @@
 
 ### Trạng thái Github Actions
 
-[![YouTube Premium](https://github.com/comico123/Unlock_YouTubePremium/actions/workflows/main.yml/badge.svg)](https://github.com/comico123/Unlock_YouTubePremium/actions/workflows/main.yml)
+[![YouTube Premium](https://github.com/comico123/Unlock_YouTubePremium/actions/workflows/patch.yml/badge.svg)](https://github.com/comico123/Unlock_YouTubePremium/actions/workflows/patch.yml)
