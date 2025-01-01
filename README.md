@@ -2,3 +2,7 @@
 
 **Mới nhất ở tại**
   - [Revanced Extended](https://github.com/inotia00/revanced-patches/releases/latest)
+
+### Trạng thái Github Actions
+
+[![YouTube Premium](https://github.com/comico123/Unlock_YouTubePremium/actions/workflows/main.yml/badge.svg)](https://github.com/comico123/Unlock_YouTubePremium/actions/workflows/main.yml)
