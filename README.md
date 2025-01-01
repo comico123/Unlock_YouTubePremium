@@ -1,6 +1,6 @@
 **YouTube & YouTube Music Premium**
 
-**Mới nhất ở tại**
+**Mới nhất ở dưới**
   - [Revanced Extended](https://github.com/inotia00/revanced-patches/releases/latest)
 
 ### Trạng thái Github Actions
