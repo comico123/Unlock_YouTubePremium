@@ -1,4 +1,4 @@
-**YouTube & YouTube Music Premium&Reddit**
+**YouTube & YouTube Music Premium & Reddit**
 
 **Mới nhất ở dưới đây:**
   - [Revanced](https://github.com/ReVanced/revanced-patches/releases/latest)
