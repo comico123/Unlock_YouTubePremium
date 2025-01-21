@@ -33,7 +33,7 @@ get_latest_release_version() {
     # Check if the request was successful
     if [[ $? -eq 0 ]]; then
         # Extract the tag name from the response
-        tag_name=$(echo "$response" | grep -oP '"tag_name":\s*"\K(v?[\d.]+)-dev.' | head -n 1)
+        tag_name=$(echo "$response" | grep -oP '"tag_name":\s*"\K(v?[\d.]+)' | head -n 1)
 
         if [[ -n "$tag_name" ]]; then
             # Extract the version from the tag (e.g., v4.16.0-release to 4.16.0)
@@ -55,7 +55,7 @@ compare_repository_versions() {
 
     if [[ -n "$version_patches" && -n "$version_current" ]]; then
         if [[ "$version_patches" == "$version_current" ]]; then
-            echo "Vá rồi! Bỏ qua nhau..."
+            echo "Vá rồi! Bỏ qua..."
             return 0  # Skip build if versions are the same
         else
             return 1  # Run build if versions differ
