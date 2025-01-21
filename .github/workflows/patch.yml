@@ -21,8 +21,8 @@ jobs:
       uses: actions/setup-java@v4
       with:
         distribution: 'temurin' # Temurin là nhà phân phối JDK phổ biến
-        java-version: '>=17 <30'      # Thay bằng phiên bản bạn cần, ví dụ: 11, 8
-    
+        java-version: '>=17 <30' # Thay bằng phiên bản bạn cần, ví dụ: 11, 8
+        check-latest: true
     - name: Vá YouTube Vip
       run: bash revanced.sh
              
