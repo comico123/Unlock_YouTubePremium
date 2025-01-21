@@ -55,7 +55,7 @@ compare_repository_versions() {
 
     if [[ -n "$version_patches" && -n "$version_current" ]]; then
         if [[ "$version_patches" == "$version_current" ]]; then
-            echo "Patched! Skipping build..."
+            echo "Vá rồi! Bỏ qua nhau..."
             return 0  # Skip build if versions are the same
         else
             return 1  # Run build if versions differ
